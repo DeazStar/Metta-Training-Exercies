@@ -3,8 +3,6 @@
 (: Nil List)
 (: Cons (-> Number List List))
 
-!(Cons 1 (Cons 2 (Cons 3 Nil)))
-
 (= (is-memeber (Cons $x $xs) $memeber) 
     (if (== $x $memeber)
         (True)
