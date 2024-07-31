@@ -7,8 +7,8 @@
 (= (min (Cons $x $xs) $min) 
     (if (== $xs Nil)
         (if (< $x $min)
-            ($x)
-            ($min)
+            $x
+            $min
         )
         (if (< $x $min)
             (min $xs $x)
@@ -18,7 +18,7 @@
 )
 (= (min (Cons $x $xs)) 
     (if (== $xs Nil)
-        ($x)
+        $x
         (min $xs $x)
     )
 )
